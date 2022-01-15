@@ -13,7 +13,7 @@ inversion_tetrad = [" ", "1st inversion", "2nd inversion", "3rd inversion"]
 #SCALES AND MODES#
 scales_modes = ["major", "natural minor", "harmonic minor", "melodic minor", "dorien", "phrygien", "lydien", "mixolydien", "eolien", "locrien", "pentatonic major", "pentatonic minor", "blues"]
 
-
+#haha#
 ##RANDOMISERS##
 
 #CHORD GENERATOR#
