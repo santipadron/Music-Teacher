@@ -3,7 +3,7 @@ import random
 ##VARIABLES##
 
 #NOTES#
-notes_1 = ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C#', 'Cb', 'D#', 'Db', 'E#', 'Eb', 'F#', 'Fb', 'G#', 'Gb', 'A#', 'Ab', 'B#', 'Bb']
+notes_1 = ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C#', 'Cb', 'D#', 'Db', 'E#', 'Eb', 'F#', 'G#', 'Gb', 'A#', 'Ab', 'Bb']
 
 #CHORDS#
 chord_type = [" ", "min", "aug", "°", "sus4", "b5", "maj7", "7", "6", "min(maj7)", "min7", "min6", "min7(b5)", "°7", "maj7(#5)", "7(#5)", "7sus", "maj7(b5)", "7(b5)"]
