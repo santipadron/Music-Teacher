@@ -44,7 +44,7 @@ def cprog_generator():
     notess = random.choice(notes_1)
     prog = random.choice(c_prog)
     montuno_choice = random.choice(montuno)
-    print(prog + " in " + notess + montuno_choice)
+    print(prog + " in " + notess + " " + montuno_choice + "\n")
 
 ##CHOICE##
 choice = input("What do you wish to practice? ('c' for chords; 's' for scales/modes; 'jazz' for a jazz standard; 'cprog' for a chord progression)\n")
@@ -60,6 +60,7 @@ elif choice == "s":
 elif choice == "jazz":
     print(line)
 elif choice == "cprog":
+    print(" ")
     for i in range(3):
         cprog_generator()
 else:
