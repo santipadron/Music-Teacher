@@ -13,7 +13,10 @@ inversion_tetrad = [" ", "1st inversion", "2nd inversion", "3rd inversion"]
 #SCALES AND MODES#
 scales_modes = ["major", "natural minor", "harmonic minor", "melodic minor", "dorien", "phrygien", "lydien", "mixolydien", "eolien", "locrien", "pentatonic major", "pentatonic minor", "blues"]
 
-#haha#
+#CHORD PROGRESSIONS#
+c_prog = ["II-V-I", "I-IV-V-I", "12-Bar Blues", "I-V-VI-IV", "V-I"]
+montuno = ["", "(montuno?)"]
+
 ##RANDOMISERS##
 
 #CHORD GENERATOR#
@@ -36,8 +39,15 @@ def scale_generator():
 #REAL BOOK STANDARD GENERATOR#
 line = random.choice(open('book.txt', encoding="utf-8").readlines())
 
+#CHORD PROGRESSIONS#
+def cprog_generator():
+    notess = random.choice(notes_1)
+    prog = random.choice(c_prog)
+    montuno_choice = random.choice(montuno)
+    print(prog + " in " + notess + montuno_choice)
+
 ##CHOICE##
-choice = input("What do you wish to practice? ('c' for chords; 's' for scales/modes; 'js' for a jazz standard)\n")
+choice = input("What do you wish to practice? ('c' for chords; 's' for scales/modes; 'jazz' for a jazz standard; 'cprog' for a chord progression)\n")
 
 if choice == "c":
     print(" ")
@@ -47,7 +57,10 @@ elif choice == "s":
     print(" ")
     for i in range(10):
         scale_generator()
-elif choice == "js":
+elif choice == "jazz":
     print(line)
+elif choice == "cprog":
+    for i in range(3):
+        cprog_generator()
 else:
     print("\nIncorrect input")
